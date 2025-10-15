@@ -1,0 +1,137 @@
+/*:root{
+    --background-color:white;
+}*/
+
+html{
+   background-color:#F7F4EA;  
+}
+
+body{
+    overflow-x: hidden;   
+    margin:10px;
+    /*background-image: url("BackgroundGif.gif");
+    background-size:1000px;*/
+}
+.BR1{
+    border-color: black;
+    margin-inline: 500px;
+}
+
+ .container{
+    color:#5A5A5A;
+    display:grid;
+    grid-template-rows: 200px 200px 350px 100px; 
+    grid-template-columns:repeat(12,1fr);
+    gap:5px;
+    max-height:800px;
+}
+
+
+
+header{
+    background-color:#5B8C8A;
+    text-align:center;
+    border:none;
+    grid-row:1;
+    grid-column:1/13;
+   
+}
+
+
+
+
+
+nav{
+    background-color:orange;
+    margin-top:-5px;
+    height:70px;
+    display:flex;
+    justify-content: space-evenly;
+    
+    grid-column:2/span 10;
+
+}
+
+
+.mainH{
+    display:grid;
+    justify-content:center;
+}
+
+.mainContent{
+    display:flex;
+    justify-content:center;
+    justify-content: space-evenly;
+    margin-top:-200px;
+    text-align:center;
+    height:100px;
+}
+main{
+    color:#5A5A5A;
+
+    position:relative;
+    background-color:rgb(192, 197, 192);
+    top:-140px;
+    height:435px;
+
+    display:grid;
+    grid-row:3;
+    grid-column:1/13;
+    
+}
+
+
+.deweyL{
+    display:grid;
+    justify-content: left;
+    
+}
+.deweyC{
+    display:grid;
+    justify-content: center;
+}
+.deweyR{
+    display:grid;
+    justify-content: right;
+}
+
+ .leftL{
+    color:#5A5A5A;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.centerL{
+    color:#5A5A5A;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.rightL{
+    color:#5A5A5A;
+    text-decoration: none;
+font-size: 25px;
+
+
+}
+
+.textL{
+    position:relative;
+    
+}
+footer{
+    color:#5A5A5A;
+
+    position:relative;
+    background-color:rgb(60, 60, 63);
+    bottom:55px;
+    display:grid;
+    grid-row:4;
+    grid-column:1/13;
+    justify-content: center;
+    font-size: 15px;
+}
+.Number{
+    display:flex;
+    justify-content: center;
+}

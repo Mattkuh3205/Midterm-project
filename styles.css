@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+
+}
+/****Container section************************************************************/
+.container{
+font-size:20px;
+display:grid;
+padding:1px;
+
+height:100vh; /*fits the pages viewport */
+scrollbar-width: none;
+
+grid-template-rows: 100px 50px 350px 90px; /* 4 horizontal rows*/
+grid-template-columns: repeat(13,1fr); /*13 vertical columns*/
+
+
+/*what this does is essentially structure the website sections, and spans across however many columns we have (13 to be exact)*/
+/*learned this from a tutorial
+gives basic layout of page sections
+*/
+grid-template-areas:
+'header header header header header header header header header header header header header'
+'nav nav nav nav nav nav nav nav nav nav nav nav nav'
+'main main main main main main main main main main main main main' 
+'footer footer footer footer footer footer footer footer footer footer footer footer footer'
+}
+
+/*
+This section establishes background color + structure
+**********************************/
+header,
+nav,
+main,
+footer{
+background-color:steelblue;
+color:white;
+border:1px white solid;
+padding:10px;
+text-decoration: none;
+}
+/************************************/
+
+/*this essentially establishes the areas*/
+
+/************************************/
+header{
+    display:grid;
+    grid-area:header;
+    justify-content:center;
+}
+
+
+/************************************/
+h1{
+    display:grid;
+    justify-content:center;
+}
+/************************************/
+
+
+/************************************/
+nav{
+    grid-area:nav;
+    display:flex;
+    justify-content: space-between;      
+    background-color: rgb(86, 132, 170);  
+}
+/************************************/
+
+/************************************/
+a{
+    text-decoration: none; 
+    color: rgb(167, 195, 218);
+    background-color:rgb(158, 158, 222);
+    border-style:none;
+    font-size: 24px;
+    border-radius:2px;
+    margin-inline: 75px;
+
+}
+/************************************/
+
+
+/************************************/
+main{
+    display:grid;
+    grid-area:main;
+    margin:0;
+    padding:0;
+    grid-template-columns:repeat(3, 1fr); /*this sets the main content in rows of 3*/
+}
+/************************************/
+
+
+
+/************************************/
+.ST1{
+    font-size: 12px;
+}
+
+.ST2{
+    font-size: 12px;
+}
+
+.ST3{
+    font-size: 12px;
+}
+/************************************/
+
+
+/************************************/
+.left{
+    background-color: rgb(51, 93, 128);
+    text-align: center;
+    padding:25px
+}
+
+.center{
+    background-color: rgb(97, 173, 235);
+    text-align: center;
+    padding:25px
+
+}
+
+.right{
+    background-color: rgb(83, 116, 144);
+    text-align: center;
+    padding:25px
+}
+/************************************/
+
+footer{
+    grid-area:footer;
+    display:grid;
+    justify-content:center;
+    font-size: 15px;
+    scrollbar-width: none;
+
+}
+
+.phone{
+    display:grid;
+    justify-content: center;
+}
+
+@media screen and (width< 1000px)
+{
+    /*learned majority of this from tutorials + random stack overflow articles + documentation
+    I am making an effort to document this
+    My main tool that I figured out I could use was grid-column:1/4
+    this would essentially divides the page into 4 parts (left to right)
+    in the media query, it stacks the sections on top of each other
+    It was a mix of finding this out by myself and using google
+
+    it works well with your normal browser and smaller sized browser, but phone is a bit iffy (have not tested it yet)
+    Because I wanted rows, that required scrolling. I wanted everything to stack on top of each other neatly, but it did not
+    I had to resort to using scroll on the main section so all the content could be readable, and not blocked by the footer
+    */
+
+    .container{
+        scrollbar-width: none;
+    }
+
+/************************************************/
+
+    header h1, p{
+        overflow-y:hidden;
+        margin:0;
+    }
+
+/************************************************/
+
+    header p{
+    text-align: center;
+    font-size: 19px;
+    }
+ 
+    main{
+        scrollbar-width: none;
+    }
+
+    nav a{
+        scrollbar-width: none;
+        margin:0;
+    }
+
+    /************************************************/
+    .left{
+        grid-column:1/4;
+        font: size 25px;
+        height:265px;
+    }
+      .IMG1{
+       height:100px;
+       width:100px;
+       margin-left:120px;
+       
+    }
+   div .ST1{
+    font-size: 20px;
+    scrollbar-width: none;
+   }
+/************************************************/
+    .center{
+        grid-column:1/4;
+        font: size 25px;
+        height:265px;
+    }
+    .IC{
+        height:100px;
+       width:100px;
+       margin-left:140px;
+        
+    }
+   div .ST2{
+    font-size: 20px;    
+    scrollbar-width: none;
+    }
+
+/***************************************************/
+    .right{
+        grid-column:1/4;
+        font: size 25px;
+        height:265px;
+    }
+
+    .IR{
+         height:100px;
+       width:100px;
+       margin-left:130px;
+    }
+
+   div .ST3{
+        font-size: 20px;    
+        scrollbar-width: none;
+    }
+
+/***************************************************/
+}

@@ -1,0 +1,16 @@
+some of the basic goals:
+
+implement grid, flexbox for main structure
+
+header section needs:
+    logo
+    Main title
+    Basic links across bar 
+    search on right
+
+            basic structure:
+
+            logo Here                       website title                    logo here
+
+                link here                    link here               link here          search section here
+

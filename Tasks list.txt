@@ -1,0 +1,27 @@
+Prepare your project for a Midterm submission.
+Here is the list of major criteria that will be used for grading: 
+
+(done) The main HTML file is called "index.html", all images are the "images" folder, styles are in the styles.css. The structure of the project is clear and there are no unnecessary files and folders. The names of all the files are lower case; do not contain spaces and special characters;
+
+(done) The code is well structured, clean and doesn't have obvious errors and mistakes;
+
+(done) Top level hierarchy of a Web page HTML markup is defined using semantic HTML elements, i.e. <header>, <main>, <footer>;
+
+(wip)Header contains identity (brand) and navigation (if the page has navigation); (to do: add logo)
+
+(done) Navigation and other components are built using proper semantic HTML elements;
+
+(done) The Web page is utilizing an external style sheet that you have created. It should NOT use any third-party CSS/libraries. Colors, font-sizes and other applicable values should be defined using CSS variables;
+
+(done) Main content area has multiple sections, each having title, text, image; 
+
+(done) Overall layout of the page is implemented using Grid. <header>, <main> and <footer> are part of the grid (assigned place on the grid);
+
+(done) Layout of individual components on the page is implemented using Flexbox (or Grid) where applicable;
+
+(done) The Web page is responsive and can adapt to different screen sizes (mobile, tablet, laptop, desktop, x-large.) Web page has well defined design and color schema.
+
+Each item gives 2 points.
+Total: 20 points
+
+Submit your project by the due date in a compressed zip folder.
