@@ -30,7 +30,10 @@ console.log(x);
 console.log(y);
 }
 
-
+const obj = {
+    name:"Bob",
+    age:"67"
+}
 
 
 
