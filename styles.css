@@ -26,6 +26,7 @@ grid-template-areas:
 'header header header header header header header header header header header header header'
 'nav nav nav nav nav nav nav nav nav nav nav nav nav'
 'main main main main main main main main main main main main main' 
+'main main main main main main main main main main main main main' 
 'footer footer footer footer footer footer footer footer footer footer footer footer footer'
 }
 
@@ -139,6 +140,7 @@ footer{
     justify-content:center;
     font-size: 15px;
     scrollbar-width: none;
+    
 
 }
 
