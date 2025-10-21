@@ -178,11 +178,7 @@ footer{
     grid-area:footer;
     display:grid;
     justify-content:center;
-<<<<<<< HEAD
-    font-size: 12px;
-=======
     font-size: 25px;
->>>>>>> 31acbba5df4736340fd191b5490268dac1187cfa
     scrollbar-width: none;
     
 
