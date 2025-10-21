@@ -216,11 +216,11 @@ footer{
       .IMG1{
        height:100px;
        width:100px;
-       margin-left:120px;
+       margin-left:80px;
        
     }
    div .ST1{
-    font-size: 20px;
+    font-size: 15px;
     scrollbar-width: none;
    }
 /************************************************/
@@ -232,11 +232,11 @@ footer{
     .IC{
         height:100px;
        width:100px;
-       margin-left:140px;
+       margin-left:100px;
         
     }
    div .ST2{
-    font-size: 20px;    
+    font-size: 15px;    
     scrollbar-width: none;
     }
 
@@ -250,11 +250,11 @@ footer{
     .IR{
          height:100px;
        width:100px;
-       margin-left:130px;
+       margin-left:80px;
     }
 
    div .ST3{
-        font-size: 20px;    
+        font-size: 15px;    
         scrollbar-width: none;
     }
 
