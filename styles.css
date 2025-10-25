@@ -5,6 +5,14 @@
     overflow-x:hidden;
 
 }
+
+/*NEW COLOR PALLETE:
+323A6F
+2C3048
+1F2440
+0D153E
+1B1C21
+*/
 /****Container section************************************************************/
 .container{
 font-size:20px;
@@ -38,7 +46,7 @@ header,
 nav,
 main,
 footer{
-background-color:steelblue;
+background-color: #2C3048;
 color:white;
 border:1px white solid;
 padding:10px;
@@ -147,8 +155,6 @@ footer{
     justify-content:center;
     font-size: 15px;
     scrollbar-width: none;
-    
-
 }
 
 .phone{
