@@ -1,39 +1,29 @@
-console.log("hello world");
-console.log("I am "+20+" years old");
-console.log(`I am ${25} 
+/*   let p1 = 8;
+    let p2 = 8;
 
-
-years old.`);
-
-const a=5;
-const b=5;
-
-console.log(a==b);
-
-const person={
-    firstName: "first",
-    lastName: "last"
+function add(p1,p2){ // this essentially does whatever operation to the values
+    return p1+p2;
 }
+console.log(add(p1,p2)) */
 
-console.log(person.firstName);
+//object
 
-
-if(true){
-     y= 20;
-    console.log(y);
-}
-
-if(true){
-let x =10;
-
-console.log(x);
-console.log(y);
-}
-
-const obj = {
-    name:"Bob",
-    age:"67"
-}
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  /* fullName : function() {
+    return this.firstName + " " + this.lastName;
+  },
+  everyThing : function(){
+     return this.firstName + " " + this.lastName +" " +this.id
+  } */
+};
+/* console.log(person.fullName());
+console.log(person.everyThing()); */
 
 
+//I like this a lot more, easier to understand, above is too over complicated
+let fullName = person.firstName + person.lastName + person.id;
 
+console.log(fullName)
